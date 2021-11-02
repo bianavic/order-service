@@ -6,13 +6,13 @@ import org.springframework.beans.BeanUtils;
 
 public class EntityToDTOUtil {
 
-  private static UserDTO toDto(User user) {
+  public static UserDTO toDto(User user) {
     UserDTO dto = new UserDTO();
     BeanUtils.copyProperties(user, dto);
     return dto;
   }
 
-  private static User toEntity(UserDTO dto) {
+  public static User toEntity(UserDTO dto) {
     User user = new User();
     BeanUtils.copyProperties(dto, user);
     return user;
