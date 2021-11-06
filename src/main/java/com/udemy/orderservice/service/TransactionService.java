@@ -19,7 +19,7 @@ public class TransactionService {
   @Autowired
   private UserTransactionRepository userTransactionRepository;
 
-  private Mono<TransactionResponseDTO> createTransaction(final TransactionRequestDTO requestDTO) {
+  public Mono<TransactionResponseDTO> createTransaction(final TransactionRequestDTO requestDTO) {
     return this.userRepository.updateUserBalance(requestDTO.getUserId(), requestDTO.getAmount())
         .filter(Boolean::booleanValue)
         .map(b -> EntityToDTOUtil.toEntity(requestDTO))
