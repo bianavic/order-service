@@ -7,7 +7,6 @@ import com.udemy.orderservice.dto.UserDTO;
 import com.udemy.orderservice.entity.User;
 import com.udemy.orderservice.entity.UserTransaction;
 import java.time.LocalDateTime;
-import javax.print.attribute.standard.OrientationRequested;
 import org.springframework.beans.BeanUtils;
 
 public class EntityToDTOUtil {
