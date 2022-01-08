@@ -1,9 +1,9 @@
 package com.udemy.orderservice.dto;
 
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 
-// once transaction is done (request) i want to send a response ( plus a tx status)
+// once transaction is done (request)
+// i want to send a response ( + a tx status)
 @Data
 @ToString
 public class TransactionResponseDTO {
