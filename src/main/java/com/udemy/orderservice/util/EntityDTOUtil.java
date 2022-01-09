@@ -1,11 +1,10 @@
 package com.udemy.orderservice.util;
 
-
 import com.udemy.orderservice.dto.*;
 import com.udemy.orderservice.entity.*;
 import org.springframework.beans.*;
 
-// helper clas to build tx request DTO
+// helper class to build tx request DTO
 public class EntityDTOUtil {
 
   // build object, stored the reference in request context itself
