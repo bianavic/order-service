@@ -5,6 +5,7 @@ import org.springframework.data.annotation.*;
 
 @Data
 @ToString
+@NoArgsConstructor
 public class ProductDTO {
 
   @Id
@@ -16,7 +17,5 @@ public class ProductDTO {
     this.description = description;
     this.price = price;
   }
-
-  public ProductDTO() {}
 
 }
